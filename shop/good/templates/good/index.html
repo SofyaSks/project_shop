@@ -1,0 +1,33 @@
+{% extends 'good/site_structure.html'%}
+
+{%block header%}
+{% include 'good/header.html'%}
+{%endblock%}
+
+{%block body%}
+
+{% load static %}
+<link rel="stylesheet" href={% static 'good/index.css' %}>
+
+<div class="main">
+    <ul>
+        {% for g in good%}
+            <li class="main_li">
+                <div class="good_div">
+                    <img src= {% static 'good/none_img.png'%}>
+                    <h3>{{g.g_name}}</h3>
+                    <p>Цена: {{g.price}}</p>
+                    <p>Категория: {{g.g_type}}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+{%endblock%}
+
+{%block footer%}
+{% include 'good/footer.html'%}
+{%endblock%}
+  

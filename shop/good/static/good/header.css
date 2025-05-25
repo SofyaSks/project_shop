@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+#logo{
+    position: absolute;
+    margin-right: 90vw;
+    font-size: 24px;
+}
+
