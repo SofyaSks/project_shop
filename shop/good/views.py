@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from . import models
 
-def main(request):
+def main(request, uprice):
     context = {
-        'good': models.Good.objects.filter(price__lt = 100)
+        'good': models.Good.objects.filter(price = uprice),
+        'uprice': uprice
     }
     return render(
         request,
