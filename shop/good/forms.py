@@ -16,3 +16,7 @@ class GoodPostForm(forms.ModelForm):
             'price' :'Цена' ,
             'g_type' : 'Тип товара'
         }
+
+        # widgets = {
+        #     "time": forms.DateInput(attrs={'type':'datetime-local' })
+        # }

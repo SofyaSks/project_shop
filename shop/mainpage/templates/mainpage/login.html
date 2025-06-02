@@ -1,0 +1,6 @@
+<form action="." method="post">
+    <!-- as_p нужна для отступа между полями формы, оборачиает поля в параграф (p) -->
+    {{user_form.as_p}}
+    {% csrf_token %}
+    <p><input type="submit" value="ENTER"></p>
+</form>

@@ -1,0 +1,6 @@
+ <p>Регистрация: </p>
+    <form action="." method="post">
+        {{ user_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="Подписать"></p>
+    </form>

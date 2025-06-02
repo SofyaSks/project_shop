@@ -29,5 +29,4 @@ def new_good(request):
         request,
         'good/new_good.html',
         context
-
     )
